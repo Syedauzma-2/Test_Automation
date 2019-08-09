@@ -165,12 +165,49 @@ time.sleep(2)
 hover = ActionChains(driver).move_to_element(element)
 hover.perform()
 driver.implicitly_wait(5)
-
+#Rent
 driver.find_element_by_xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/ul/li[1]/a").click()
 time.sleep(3)
 driver.find_element_by_xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/ul/li[1]/ul/li[2]/a").click()
 time.sleep(3)
 
+#pG
+element=driver.find_element_by_xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/a")
+time.sleep(2)
+hover = ActionChains(driver).move_to_element(element)
+hover.perform()
+driver.implicitly_wait(5)
+
+driver.find_element_by_xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/ul/li[1]/a").click()
+time.sleep(3)
+
+driver.find_element_by_xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/ul/li[1]/ul/li[3]/a").click()
+time.sleep(3)
+
+#see all the properties
+element=driver.find_element_by_xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/a")
+time.sleep(2)
+hover = ActionChains(driver).move_to_element(element)
+hover.perform()
+driver.implicitly_wait(5)
+
+#mouse_hover to see all properties
+element=driver.find_element_by_xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/ul/li[3]/a")
+time.sleep(2)
+hover = ActionChains(driver).move_to_element(element)
+hover.perform()
+driver.implicitly_wait(5)
+
+driver.find_element_by_xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[4]/ul/li[3]/ul/li[1]/a").click()
+time.sleep(3)
+
+#Scroll_Down
+elm = driver.find_element_by_tag_name('html')
+elm.send_keys(Keys.END)
+time.sleep(3)
+elm.send_keys(Keys.PAGE_UP)
+time.sleep(4)
+elm.send_keys(Keys.HOME)
 
 driver.quit()
 
