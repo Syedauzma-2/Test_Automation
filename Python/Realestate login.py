@@ -13,6 +13,13 @@ driver.get("http://real-estate.itechscripts.com/login.php")
 
 time.sleep(5)
 
+#Fetching the title
+print("Title of page is" + driver.title)
+
+#Fetch URL of page
+print("Page URL is" + driver.current_url)
+
+
 driver.find_element_by_xpath("//input[@id='login_username']").clear()
 time.sleep(3)
 
@@ -33,52 +40,52 @@ driver.switch_to.alert.accept()
 
 
 
-# #register
-# element=driver.find_element_by_xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[2]/a")
-# time.sleep(2)
-#
-# hover = ActionChains(driver).move_to_element(element)
-# hover.perform()
-# driver.implicitly_wait(5)
-#
-# driver.find_element_by_xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[2]/ul/li/a").click()
-# time.sleep(1)
-#
-# # Register form
-# driver.find_element_by_xpath(".//*[@id='company_name']").send_keys("Mindsnxt")
-# time.sleep(3)
-#
-# driver.find_element_by_xpath(".//*[@id='contact_prson']").send_keys("xyz")
-# time.sleep(3)
-#
-# driver.find_element_by_xpath(".//*[@id='cmpny_email']").send_keys("userdemo@gmail.com")
-# time.sleep(3)
-#
-# driver.find_element_by_xpath("//*[@id='profile_image']").send_keys('C:\\Users\\lts\\Desktop\\intrenship\\upload.PNG')
-#
-# driver.find_element_by_xpath(".//*[@id='mobile_phone']").send_keys("1234565677")
-# time.sleep(2)
-#
-# driver.find_element_by_xpath(".//*[@id='work_phone']").send_keys("9876543210")
-# time.sleep(3)
-#
-# driver.find_element_by_xpath(".//*[@id='about_me']").send_keys("iam a good person")
-# time.sleep(3)
-#
-# driver.find_element_by_xpath(".//*[@id='agnt_password']").send_keys("@1234")
-# time.sleep(3)
-#
-# driver.find_element_by_xpath(".//*[@id='agnt_cpassword']").send_keys("@1234")
-# time.sleep(3)
-#
-# driver.find_element_by_xpath(".//*[@id='agent_registration']/input").click()
-# time.sleep(3)
-#
-# # driver.switch_to.alert.accept()
-#
-#
-# driver.find_element_by_xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[1]/a").click()
-# time.sleep(8)
+#register
+element=driver.find_element_by_xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[2]/a")
+time.sleep(2)
+
+hover = ActionChains(driver).move_to_element(element)
+hover.perform()
+driver.implicitly_wait(5)
+
+driver.find_element_by_xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[2]/ul/li/a").click()
+time.sleep(1)
+
+# Register form
+driver.find_element_by_xpath(".//*[@id='company_name']").send_keys("Mindsnxt")
+time.sleep(3)
+
+driver.find_element_by_xpath(".//*[@id='contact_prson']").send_keys("xyz")
+time.sleep(3)
+
+driver.find_element_by_xpath(".//*[@id='cmpny_email']").send_keys("userdemo@gmail.com")
+time.sleep(3)
+
+driver.find_element_by_xpath("//*[@id='profile_image']").send_keys('C:\\Users\\lts\\Desktop\\intrenship\\upload.PNG')
+
+driver.find_element_by_xpath(".//*[@id='mobile_phone']").send_keys("1234565677")
+time.sleep(2)
+
+driver.find_element_by_xpath(".//*[@id='work_phone']").send_keys("9876543210")
+time.sleep(3)
+
+driver.find_element_by_xpath(".//*[@id='about_me']").send_keys("iam a good person")
+time.sleep(3)
+
+driver.find_element_by_xpath(".//*[@id='agnt_password']").send_keys("@1234")
+time.sleep(3)
+
+driver.find_element_by_xpath(".//*[@id='agnt_cpassword']").send_keys("@1234")
+time.sleep(3)
+
+driver.find_element_by_xpath(".//*[@id='agent_registration']/input").click()
+time.sleep(3)
+
+# driver.switch_to.alert.accept()
+
+
+driver.find_element_by_xpath(".//*[@id='undefined-sticky-wrapper']/div/div/div/div/nav/ul/li[1]/a").click()
+time.sleep(8)
 
 #drop_down
 #Contract
